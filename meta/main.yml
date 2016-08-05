@@ -1,0 +1,17 @@
+galaxy_info:
+  author: Yann Hodique
+  description: Wait for SSH to be up
+  company: VMware
+
+  license: MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+    - name: GenericUNIX
+      versions:
+        - all
+  galaxy_tags:
+    - system
+
+dependencies: []
