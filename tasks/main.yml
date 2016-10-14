@@ -5,6 +5,6 @@
   local_action:
     module: wait_for
     args:
-      host: "{{ ansible_host | default(ansible_ssh_host | default(inventory_hostname)) }}"
-      port: "{{ ansible_port | default(ansible_ssh_port | default (22)) }}"
+      host: "{{ ansible_ssh_host | default(ansible_host | default(inventory_hostname)) }}"
+      port: "{{ ansible_ssh_port | default(ansible_port | default (22)) }}"
       search_regex: "{{ ssh_banner_regex }}"
